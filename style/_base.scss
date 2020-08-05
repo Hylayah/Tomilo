@@ -1,0 +1,57 @@
+// COLOR VARIABLES
+
+//$color-primary: #8f9aff;
+$color-primary: #17a9fa;
+$color-primary-dark: #16a2ec;
+
+$color-secondary: rgb(43, 43, 43);
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+
+// FONT VARIABLES
+$font-primary: 'Mulish', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;  // 1000px
+$bp-medium: 50em;  // 800px
+$bp-small: 41em;   //600px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 12rem calc(55vh - 12rem) 64vh 60vh 35vh;
+    grid-template-columns: [start-gap] 8rem  repeat(7, [col-start] 1fr [col-end])  8rem [end-gap];
+
+    @media only screen and (max-width: $bp-largest) {
+        grid-template-columns: [start-gap] 2rem  repeat(7, [col-start] 1fr [col-end])  2rem [end-gap];
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 12rem calc(55vh - 12rem) 1fr 80vh 100%;
+    }
+}

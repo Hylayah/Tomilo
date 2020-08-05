@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/main.css">
+    <title>Tytul strony</title>
+    <meta name="keywords" content="keywords">
+    <meta name='description' content='opis'>
+    <link rel="shortcut icon" type="image/png" href="img/scan.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <div class="nav__top">
+                <div class="nav__top__icon">
+                    <svg class="icon icon--nav">
+                        <use xlink:href='img/sprite.svg#email'></use>
+                    </svg>
+                    email@email.com
+                </div>
+                <div class="nav__top__icon">
+                    <svg class="icon icon--nav">
+                        <use xlink:href='img/sprite.svg#phone'></use>
+                    </svg>
+                    +48 123 123 123
+                </div>
+                
+            </div>
+            <div class="nav__main">
+                <img src="img/logo.png" alt="main logo" class="nav__logo">
+                <div class="nav__burger">
+                    <input type="checkbox" id="nav__menu" />
+                    <label for="nav__menu" class='nav__burger__label'>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </label>
+                </div>
+                <a href="index.html" class="nav__cell nav__cell--1">strona 1</a>
+                <a href="index2.html" class="nav__cell nav__cell--2">strona 2</a>
+                <a href="index3.html" class="nav__cell nav__cell--3">strona 3</a>
+                <a href="index4.html" class="nav__cell nav__cell--4 selected">strona 4</a>
+                
+            </div>
+        </div>
+    </nav>
+    <nav class="nav__open none">
+        <ul class="nav__open__list">
+            <li class="nav__open__item"><a href="index.html" class="nav__open__link nav__open__link--1">strona 1</a></li>
+            <li class="nav__open__item"><a href="index2.html" class="nav__open__link nav__open__link--2">strona 2</a></li>
+            <li class="nav__open__item"><a href="index3.html" class="nav__open__link nav__open__link--3">strona 3</a></li>
+            <li class="nav__open__item"><a href="index4.html" class="nav__open__link nav__open__link--4 selected">strona 4</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="space"></section>
+
+        <section class="header">
+            <h1 class="heading1">Tytuł strony 4</h1>
+        </section>
+
+        <section class="section">
+            <div class="section__content">
+                <div class="section__content__top">
+                    <img src="img/doctor.png" alt="" class="section__content__top__icon">
+                    <h2 id='section-title' class="section__content__top__title heading-2">Tytuł sekcji 1</h2>
+                </div>
+                <div id='section-text' class="section__content__main">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis aspernatur maiores tenetur, obcaecati corrupti nostrum eius. Nostrum possimus recusandae molestias 
+                    illum temporibus dolorem suscipit, id accusantium animi quasi iste facere deleniti adipisci cumque beatae delectus numquam voluptate eum. Libero quae perspiciatis ab 
+                    obcaecati culpa rerum minus fugiat recusandae ducimus rem! Id accusantium animi quasi iste facere deleniti adipisci cumque beatae delectus numquam voluptate eum. Libero quae perspiciatis ab 
+                    obcaecati culpa rerum minus fugiat recusandae ducimus rem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facere eum accusantium non harum ex ducimus, libero nihil animi optio maxime.
+                </div>
+            </div>
+            <div class="section__menu">
+                <div id='section-1' class="section__menu__option section__menu__option-1 active"> <span>sekcja menu 1</span></div>
+                <div id='section-2' class="section__menu__option section__menu__option-2"><span>sekcja menu 2</span></div>
+                <div id='section-3' class="section__menu__option section__menu__option-3"><span>sekcja menu 3</span></div>
+                <div id='section-4' class="section__menu__option section__menu__option-4"><span>sekcja menu 4</span></div>
+                <div id='section-5' class="section__menu__option section__menu__option-5"><span>sekcja menu 5</span></div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map__info">
+                <h3 class="heading3">Lokalizacja</h3>
+                <p class="map__info-1">ul. Swobodna 39/24 <br>15-145 Białystok</p>
+                <p class="map__info-1">tel. 123 123 123 <br> email: email@email.com</p>
+            </div>
+
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=23.105707168579105%2C53.14503128973822%2C23.109247684478763%2C53.146416415147606&amp;layer=mapnik&amp;marker=53.145724662397114%2C23.10747742652893">
+            </iframe>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__logo">
+                <img src="img/logo.png" alt="main logo" class="footer__logo__img">
+                <a href="#">
+                    <svg class="footer__logo__icon">
+                        <use xlink:href='img/sprite.svg#linkedin'></use>
+                    </svg>
+                </a>
+                
+            </div>
+            <div class="footer-1">
+                <div class="footer-1__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                Tempore aspernatur quam quod nihil sint, molestiae exercitationem eaque accusamus tenetur sunt qui nesciunt tempora velit commodi deleniti quasi doloribus quibusdam dolore.
+                </div>    
+            </div>
+            <div class="footer-2">
+                <h4 class='heading4'>Firma</h4>
+                <div class='footer-2__link'>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">strona1</a>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">strona2</a>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">strona3</a>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">strona4</a>
+                </div>
+            </div>
+            <div class="footer-2 footer-2--contact">
+                <h4 class='heading4'>Kontakt</h4>
+                <div class='footer-2__link'>
+                    <span class='footer-2__link__item'>email@email.com</span>
+                    <span class='footer-2__link__item'>+48 213 213 123</span>
+                    <span class='footer-2__link__item'>ul. Swobodna 39/24 </span>
+                </div>
+            </div>
+            <div class="footer-2 footer-2--marki">
+                <h4 class='heading4'>Marki</h4>
+                <div class='footer-2__link'>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">marka1</a>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">marka2</a>
+                    <a class='footer-2__link__item footer-2__link__item--a' href="#">marka3</a>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">©2020 Medical Equipment Service Paweł Tomiło. Designed By <a href="http://www.arturchrapowicz.com">Artur Chrapowicz</a>.</div>
+
+    </div>
+    <script src="js/script4.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.map {
+    background-color: $color-secondary;
+    grid-row: 4 / 5;
+    grid-column: 1/-1;
+    position: relative;
+    padding:3rem 0;
+
+    @media only screen and (max-width: $bp-small) {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    &__info{
+        position: absolute;
+        background-color: $color-primary;
+        color:white;
+        font-size: 1.5rem;
+        padding: 3rem;
+        top: 40%;
+        left:0;
+
+        &-1{
+            margin-top: 2rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin-top: 1rem;
+                display: inline-block;
+            }
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            position: initial;
+            padding: 1rem 2rem;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, max-content);
+        }
+    }
+
+    & iframe{
+        width:100%;
+        height:100%;
+    }
+}
