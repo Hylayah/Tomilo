@@ -23,6 +23,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: 300;
   line-height: 1.6;
+  cursor: default;
 }
 
 .container {
@@ -499,6 +500,10 @@ body {
   .section__content__main {
     font-size: 1.3rem;
   }
+}
+
+.section__content__main ul {
+  padding-left: 20px;
 }
 
 .section__menu {
